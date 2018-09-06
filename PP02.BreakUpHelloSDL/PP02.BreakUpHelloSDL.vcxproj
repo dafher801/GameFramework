@@ -23,6 +23,7 @@
     <ProjectGuid>{5F869435-1A84-442D-AB3F-A46E6AA6DC5F}</ProjectGuid>
     <RootNamespace>PP02BreakUpHelloSDL</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>PP01.HelloSDL</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
