@@ -1,0 +1,21 @@
+#include <SDL.h>
+#include "Game.h"
+
+Game * game = NULL;
+
+int main(int argc, char * argv[])
+{
+	game = new Game;
+	game->init("Chapter 1", 100, 100, 640, 480, false);
+
+	while (game->running())
+	{
+		game->handleEvents();
+		game->update();
+		game->render();
+	}
+
+	game->clean();
+
+	return 0;
+}
