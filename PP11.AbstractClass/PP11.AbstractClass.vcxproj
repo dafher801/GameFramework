@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{0EC6A487-E2DF-4DE3-B7C9-B77AE76C9F9E}</ProjectGuid>
-    <RootNamespace>PP10Polymorphism</RootNamespace>
+    <ProjectGuid>{838945C5-712B-49BB-9078-0C92A3574811}</ProjectGuid>
+    <RootNamespace>PP11AbstractClass</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -69,10 +69,7 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\user\Desktop\SDL2_image-2.0.0\include;C:\Users\user\Desktop\SDL2-2.0.8\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\user\Desktop\SDL2-2.0.8\lib\x64;C:\Users\user\Desktop\SDL2_image-2.0.0\lib\x64;$(LibraryPath)</LibraryPath>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -80,10 +77,6 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
-    <Link>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <SubSystem>Windows</SubSystem>
-    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -122,22 +115,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Enemy.cpp" />
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Game.cpp" />
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\GameObject.cpp" />
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\main.cpp" />
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Player.cpp" />
-    <ClCompile Include="LoaderParams.cpp" />
-    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="..\PP10.Polymorphism\Enemy.cpp" />
+    <ClCompile Include="..\PP10.Polymorphism\Game.cpp" />
+    <ClCompile Include="..\PP10.Polymorphism\LoaderParams.cpp" />
+    <ClCompile Include="..\PP10.Polymorphism\main.cpp" />
+    <ClCompile Include="..\PP10.Polymorphism\Player.cpp" />
+    <ClCompile Include="..\PP10.Polymorphism\SDLGameObject.cpp" />
+    <ClCompile Include="..\PP10.Polymorphism\TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Enemy.h" />
-    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Game.h" />
-    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\GameObject.h" />
-    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Player.h" />
-    <ClInclude Include="LoaderParams.h" />
-    <ClInclude Include="SDLGameObject.h" />
-    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="..\PP10.Polymorphism\Enemy.h" />
+    <ClInclude Include="..\PP10.Polymorphism\Game.h" />
+    <ClInclude Include="..\PP10.Polymorphism\GameObject.h" />
+    <ClInclude Include="..\PP10.Polymorphism\LoaderParams.h" />
+    <ClInclude Include="..\PP10.Polymorphism\Player.h" />
+    <ClInclude Include="..\PP10.Polymorphism\SDLGameObject.h" />
+    <ClInclude Include="..\PP10.Polymorphism\TextureManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

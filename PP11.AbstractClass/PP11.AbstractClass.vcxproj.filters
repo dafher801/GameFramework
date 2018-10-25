@@ -15,48 +15,48 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TextureManager.cpp">
+    <ClCompile Include="..\PP10.Polymorphism\Enemy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="LoaderParams.cpp">
+    <ClCompile Include="..\PP10.Polymorphism\Game.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Enemy.cpp">
+    <ClCompile Include="..\PP10.Polymorphism\LoaderParams.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Game.cpp">
+    <ClCompile Include="..\PP10.Polymorphism\main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\GameObject.cpp">
+    <ClCompile Include="..\PP10.Polymorphism\Player.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\main.cpp">
+    <ClCompile Include="..\PP10.Polymorphism\SDLGameObject.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Player.cpp">
+    <ClCompile Include="..\PP10.Polymorphism\TextureManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TextureManager.h">
+    <ClInclude Include="..\PP10.Polymorphism\Enemy.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="LoaderParams.h">
+    <ClInclude Include="..\PP10.Polymorphism\Game.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="SDLGameObject.h">
+    <ClInclude Include="..\PP10.Polymorphism\GameObject.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Game.h">
+    <ClInclude Include="..\PP10.Polymorphism\LoaderParams.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\GameObject.h">
+    <ClInclude Include="..\PP10.Polymorphism\Player.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Player.h">
+    <ClInclude Include="..\PP10.Polymorphism\SDLGameObject.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Enemy.h">
+    <ClInclude Include="..\PP10.Polymorphism\TextureManager.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
