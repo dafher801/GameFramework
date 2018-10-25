@@ -18,6 +18,21 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Enemy.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Game.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\GameObject.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\main.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Player.cpp" />
+    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\TextureManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Enemy.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Game.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\GameObject.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Player.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\TextureManager.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{0EC6A487-E2DF-4DE3-B7C9-B77AE76C9F9E}</ProjectGuid>
@@ -121,24 +136,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Enemy.cpp" />
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Game.cpp" />
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\GameObject.cpp" />
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\main.cpp" />
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Player.cpp" />
-    <ClCompile Include="LoaderParams.cpp" />
-    <ClCompile Include="TextureManager.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Enemy.h" />
-    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Game.h" />
-    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\GameObject.h" />
-    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Player.h" />
-    <ClInclude Include="LoaderParams.h" />
-    <ClInclude Include="SDLGameObject.h" />
-    <ClInclude Include="TextureManager.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
