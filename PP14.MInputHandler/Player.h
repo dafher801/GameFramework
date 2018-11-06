@@ -1,10 +1,12 @@
 #pragma once
 
 #include <iostream>
+#include <vector>
 #include <SDL.h>
 #include "SDLGameObject.h"
 #include "LoaderParams.h"
 #include "InputHandler.h"
+#include "Bullet.h"
 
 class Player : public SDLGameObject
 {
@@ -17,4 +19,6 @@ public:
 
 private:
 	void handleInput();
+
+	std::vector<Bullet*> _bullets;
 };

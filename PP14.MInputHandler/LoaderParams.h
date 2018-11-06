@@ -5,7 +5,9 @@
 class LoaderParams
 {
 public:
+	LoaderParams(const LoaderParams * params);
 	LoaderParams(int x, int y, int width, int height, std::string textureID);
+
 	int getX() const;
 	int getY() const;
 	int getWidth() const;

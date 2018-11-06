@@ -1,5 +1,11 @@
 #include "LoaderParams.h"
 
+LoaderParams::LoaderParams(const LoaderParams * params)
+	: _x(params->_x), _y(params->_y)
+	, _width(params->_width)
+	, _height(params->_height)
+	, _textureID(params->_textureID) {}
+
 LoaderParams::LoaderParams(int x, int y, int width, int height, std::string textureID)
 	: _x(x), _y(y), _width(width), _height(height), _textureID(textureID) {}
 
