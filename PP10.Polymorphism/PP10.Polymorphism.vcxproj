@@ -20,18 +20,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Enemy.cpp" />
-    <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Game.cpp" />
     <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\GameObject.cpp" />
     <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\main.cpp" />
     <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Player.cpp" />
     <ClCompile Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\TextureManager.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Monster.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Enemy.h" />
-    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Game.h" />
-    <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\GameObject.h" />
     <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\Player.h" />
     <ClInclude Include="..\..\..\..\..\Desktop\GameFramework-master\PP10.Polymorphism\TextureManager.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Monster.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

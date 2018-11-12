@@ -4,6 +4,9 @@
 #include <SDL.h>
 #include "TextureManager.h"
 #include "GameObject.h"
+#include "Monster.h"
+
+#define MONSTER_NUM 2
 
 class Game
 {
@@ -30,8 +33,6 @@ private:
 
 	int _currentFrame;
 
+	GameObject * _monsters[MONSTER_NUM];
 	std::vector<GameObject*> _gameObjects;
-	GameObject * _go;
-	GameObject * _player;
-	GameObject * _enemy;
 };

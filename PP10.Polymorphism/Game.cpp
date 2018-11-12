@@ -2,8 +2,7 @@
 #include <SDL_image.h>
 #include <stdio.h>
 #include "Game.h"
-#include "Player.h"
-#include "Enemy.h"
+#include "Monster.h"
 
 bool Game::init(const char * title, int xpos, int ypos, int width, int height, bool fullscreen)
 {
@@ -28,17 +27,12 @@ bool Game::init(const char * title, int xpos, int ypos, int width, int height, b
 		return false;
 	}
 
-	_go = new GameObject();
-	_player = new Player();
-	_enemy = new Enemy();
-
-	_go->load(100, 100, 128, 82, "animate");
-	_player->load(300, 300, 128, 82, "animate");
-	_enemy->load(0, 0, 128, 82, "animate");
-
-	_gameObjects.push_back(_go);
-	_gameObjects.push_back(_player);
-	_gameObjects.push_back(_enemy);
+	for (int i = 0; i < MONSTER_NUM; i++)
+	{
+		_monsters[i] = new Monster;
+		_monsters[i]->load(0, 100 * (i + 1), 128, 82, "animate");
+		_gameObjects.push_back(_monsters[i]);
+	}
 
 	return true;
 }
