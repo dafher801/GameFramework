@@ -97,7 +97,6 @@ void InputHandler::update()
 
 void InputHandler::clean()
 {
-	
 }
 
 bool InputHandler::isKeyDown(SDL_Scancode key)

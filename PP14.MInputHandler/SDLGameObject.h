@@ -14,6 +14,10 @@ public:
 	virtual void update();
 	virtual void clean();
 
+	SDL_Rect getRect() const;
+
+	std::string getTextureID() const;
+
 protected:
 	int _width;
 	int _height;

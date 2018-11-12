@@ -1,12 +1,15 @@
 #include "Player.h"
+#include "BulletManager.h"
+
+Player::Player(const LoaderParams * params)
+	: SDLGameObject(params) {}
 
 void Player::draw()
 {
 	SDLGameObject::draw();
-}
 
-Player::Player(const LoaderParams * params)
-	: SDLGameObject(params) {}
+	BulletManager::getInstance()->draw();
+}
 
 void Player::update()
 {
@@ -17,11 +20,12 @@ void Player::update()
 	_currentFrame = int(((SDL_GetTicks() / 100) % 6));
 	SDLGameObject::update();
 
-
+	BulletManager::getInstance()->update();
 }
 
 void Player::clean()
 {
+	BulletManager::getInstance()->clean();
 }
 
 void Player::handleInput()
@@ -42,5 +46,8 @@ void Player::handleInput()
 		_velocity.setY(2);
 
 	if (TheInputHandler::Instance()->getMouseButtonState(LEFT))
-		_velocity.setX(1);
+	{
+		BulletManager::getInstance()->PushBackBullet(new Bullet(new LoaderParams(
+			_position.getX(), _position.getY(), 50, 50, "Ball")));
+	}
 }

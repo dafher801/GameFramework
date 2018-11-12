@@ -54,6 +54,7 @@ void TextureManager::drawFrame(std::string id, int x, int y, int width, int heig
 {
 	SDL_Rect srcRect;
 	SDL_Rect destRect;
+
 	srcRect.x = width * currentFrame;
 	srcRect.y = height * (currentRow - 1);
 	srcRect.w = destRect.w = width;
@@ -63,5 +64,4 @@ void TextureManager::drawFrame(std::string id, int x, int y, int width, int heig
 
 	SDL_RenderCopyEx(renderer, _textureMap[id], &srcRect,
 		&destRect, 0, 0, flip);
-
 }
